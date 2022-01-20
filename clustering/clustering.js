@@ -20,6 +20,12 @@ function initMap() {
     imagePath:
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
+  // Change styles after cluster is created
+  const styles = markerClusterer.getStyles();
+  for (let i=0; i<styles.length; i++) {
+    styles[i].textColor = "white";
+    styles[i].textSize = 16;
+  };
 }
 const locations = [
 { lat: 49.758123, lng: -92.65349},
