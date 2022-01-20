@@ -1,7 +1,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
-    center: { lat: -28.024, lng: 140.887 },
+    zoom: 6,
+    center: { lat: 47.337, lng: -84.455 },
   });
   // Create an array of alphabetical characters used to label the markers.
   const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -16,10 +16,13 @@ function initMap() {
     });
   });
   // Add a marker clusterer to manage the markers.
-  new MarkerClusterer(map, markers, {
+  const markerClusterer = new MarkerClusterer(map, markers, {
     imagePath:
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
+  const styles = markerClusterer.getStyles();
+  for (let i=0; i<styles.length; i++) {
+    styles[i].textColor = 'White';
 }
 const locations = [
 { lat: 49.758123, lng: -92.65349},
