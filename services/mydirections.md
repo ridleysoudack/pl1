@@ -7,9 +7,10 @@ Be creative and use multiple parameters from the API documentation to earn a top
 > Tip: Can't make changes? GitHub previews MD documents by default (read-only). Start editing to make the changes for your URL and JSON response below
 
 ## Directions URL
+This URL returns directions data for a cycling route for American tourists (units in imperial) that hits a number of Toronto landmarks, avoiding highways:
 
 ```
-https://maps.googleapis.com/maps/api/directions/json?destination=place_id:ChIJmzrzi9Y0K4gRgXUc3sTY7RU&origin=place_id:ChIJBfc2I9M1K4gRZ-4AoyXIvAE&waypoints=place_id:ChIJ3flrK2IzK4gRsoLymGpVn1g%7Cplace_id:ChIJE-Xa87o0K4gRkvXFHuE0hMk%7Cplace_id:ChIJ_wU50co0K4gRingYcKzmofs&mode=bicycling&units=imperial&avoid=indoor%7Chighways&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+https://maps.googleapis.com/maps/api/directions/json?destination=place_id:ChIJmzrzi9Y0K4gRgXUc3sTY7RU&origin=place_id:ChIJBfc2I9M1K4gRZ-4AoyXIvAE&waypoints=place_id:ChIJ3flrK2IzK4gRsoLymGpVn1g%7Cplace_id:ChIJE-Xa87o0K4gRkvXFHuE0hMk%7Cplace_id:ChIJ_wU50co0K4gRingYcKzmofs&mode=bicycling&units=imperial&avoid=highways&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 ```
 
 ## Next paste the full JSON response to this query here:
