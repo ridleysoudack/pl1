@@ -23,6 +23,7 @@ function initMap() {
   const styles = markerClusterer.getStyles();
   for (let i=0; i<styles.length; i++) {
     styles[i].textColor = 'White';
+  }
 }
 const locations = [
 { lat: 49.758123, lng: -92.65349},
