@@ -20,7 +20,7 @@ function initMap() {
     imagePath:
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
-  // Change styles after cluster is created
+  // Change styles after cluster is created - text colour and size modified for readability
   const styles = markerClusterer.getStyles();
   for (let i=0; i<styles.length; i++) {
     styles[i].textColor = "white";
