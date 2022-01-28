@@ -16,16 +16,10 @@ function initMap() {
     });
   });
   // Add a marker clusterer to manage the markers.
-  const markerClusterer = new MarkerClusterer(map, markers, {
+  new MarkerClusterer(map, markers, {
     imagePath:
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
-  // Change styles after cluster is created - text colour and size modified for readability
-  const styles = markerClusterer.getStyles();
-  for (let i=0; i<styles.length; i++) {
-    styles[i].textColor = "white";
-    styles[i].textSize = 16;
-  };
 }
 const locations = [
 { lat: 49.758123, lng: -92.65349},
