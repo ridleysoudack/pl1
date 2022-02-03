@@ -7,11 +7,23 @@ Be creative and use multiple parameters from the API documentation to earn a top
 > Tip: Can't make changes? GitHub previews MD documents by default (read-only). Start editing to make the changes for your URL and JSON response below
 
 ## Directions URL
-This URL returns directions data for a cycling route for American tourists (units in imperial) that hits a number of Toronto landmarks, avoiding highways:
+This URL returns directions data for a cycling route for American tourists (units in imperial) that hits a number of Toronto landmarks and scenic neighbourhoods, while avoiding highways:
 
 ```
 https://maps.googleapis.com/maps/api/directions/json?destination=place_id:ChIJmzrzi9Y0K4gRgXUc3sTY7RU&origin=place_id:ChIJBfc2I9M1K4gRZ-4AoyXIvAE&waypoints=place_id:ChIJ3flrK2IzK4gRsoLymGpVn1g%7Cplace_id:ChIJE-Xa87o0K4gRkvXFHuE0hMk%7Cplace_id:ChIJ_wU50co0K4gRingYcKzmofs&mode=bicycling&units=imperial&avoid=highways&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 ```
+
+## Links to waypoint locations
+Start point (High Park, Toronto): https://www.google.com/maps/search/?api=1&query=43.6465479,-79.465879&query_place_id=ChIJBfc2I9M1K4gRZ-4AoyXIvAE
+
+Waypoint 1 (Casa Loma, Toronto): https://www.google.com/maps/search/?api=1&query=43.6803861,-79.4168726&query_place_id=ChIJ3flrK2IzK4gRsoLymGpVn1g
+
+Waypoint 2 (Royal Ontario Museum, Toronto): https://www.google.com/maps/search/?api=1&query=43.6677097,-79.3969658&query_place_id=ChIJE-Xa87o0K4gRkvXFHuE0hMk
+
+Waypoint 3 (Yonge and Dundas Square, Toronto): https://www.google.com/maps/search/?api=1&query=43.6560811,-79.3823601&query_place_id=ChIJ_wU50co0K4gRingYcKzmofs
+
+End point (CN Tower, Toronto): https://www.google.com/maps/search/?api=1&query=43.6425662,-79.3892455&query_place_id=ChIJmzrzi9Y0K4gRgXUc3sTY7RU
+
 
 ## Next paste the full JSON response to this query here:
 
