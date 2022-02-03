@@ -102,8 +102,8 @@
 
 
     </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--This stylesheet gives me access to Google Icons needed for restaurant ratings-->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--This stylesheet gives me access to Google Icons needed for restaurant star ratings-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script> <!--Using a defer rather than async per recommendation in the readings-->
     <script src='mapscript.js' defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly" defer></script>
 </head>
@@ -115,7 +115,7 @@
         <div class="flex-container">
             <div class="flex-left" id="mapdiv"></div>
             <div id="legend">
-                <img src="images/staricon.png"><span>Amazing Restaurant</span>
+                <img src="images/staricon.png"><span>Restaurant</span>
             </div>
             <div class='flex-right'>
                 <img id=osakalogo src='images/OsakaCityImage.png' alt='Osaka City Logo'>
