@@ -1,9 +1,18 @@
 function initMap() {
     const styledMapType = new google.maps.StyledMapType( //Styling tweaked from: https://developers.google.com/maps/documentation/javascript/examples/maptype-styled-simple
         [
-        { elementType: "geometry", stylers: [{ color: "#ebe3cd" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#523735" }] },
-        { elementType: "labels.text.stroke", stylers: [{ color: "#f5f1e6" }] },
+        { 
+            elementType: "geometry", 
+            stylers: [{ color: "#ebe3cd" }] 
+        },
+        {
+            elementType: "labels.text.fill", 
+            stylers: [{ color: "#523735" }] 
+        },
+        { 
+            elementType: "labels.text.stroke", 
+            stylers: [{ color: "#f5f1e6" }] 
+        },
         {
             featureType: "administrative",
             elementType: "geometry.stroke",
@@ -35,14 +44,14 @@ function initMap() {
             stylers: [{ color: "#a5b076" }],
         },
         {
-            "featureType": "poi.attraction",
-            "elementType": "labels",
-            "stylers": [{ visibility: "on"}]
+            featureType: "poi.attraction",
+            elementType: "labels",
+            stylers: [{ visibility: "on"}]
         },
         {
-            "featureType": "poi.attraction",
-            "elementType": "labels.icon",
-            "stylers": [{ "color": "#CC5500"}]
+            featureType: "poi.attraction",
+            elementType: "labels.icon",
+            stylers: [{ "color": "#CC5500"}]
         },
         {
             featureType: "road",
@@ -133,9 +142,9 @@ function initMap() {
         suppressMarkers: true,
     });
     directionsRenderer.setPanel(document.getElementById('directionsPanel')) //Set div to contain directions to each restaurant 
-    map.mapTypes.set("styled_map", styledMapType); //Apply map styling
-    map.setMapTypeId("styled_map");
 
+    map.mapTypes.set("styled_map", styledMapType); //Apply map styling (template linked above)
+    map.setMapTypeId("styled_map");
 
     const mapicon = "images/staricon.png"; // Custom Marker image icon code based on: https://developers.google.com/maps/documentation/javascript/examples/icon-simple#maps_icon_simple-javascript
     const markers = locations.map((location) => {
@@ -172,6 +181,7 @@ function initMap() {
     };
 
 };
+
 function stationRoute(start, finish, dirServ, dirRend) { // This function generates a driving route from a start point to a finish point, based on: https://developers.google.com/maps/documentation/javascript/examples/directions-simple
     var request = {
         origin: start,
@@ -184,6 +194,7 @@ function stationRoute(start, finish, dirServ, dirRend) { // This function genera
         };
     });
 };
+
 const locations = [
     { lat: 34.679607, lng: 135.513404}, // Yakiniku Rokko
     { lat: 34.695231, lng: 135.488685}, // La Pizza Napoletana Regalo
@@ -192,6 +203,7 @@ const locations = [
     { lat: 34.668810, lng: 135.501491}, // Mizuno
     { lat: 34.696909, lng: 135.497403} // Monji Sushi
 ];
+
 const contentStrings = [
     '<div id="content">'+
     '<h3>Yakiniku Rokko</h3>'+
